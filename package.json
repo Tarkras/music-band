@@ -1,14 +1,14 @@
 {
   "name": "uoc-boilerplate",
   "version": "3.5.0",
-  "private": true,
-  "description": "Boilerplate for Advanced HTML/CSS Tools UOC students",
+  "description": "Band music webpage. Used the UOC Boilerplate for Advanced HTML/CSS Tools",
   "scripts": {
     "parcel:serve": "parcel src/index.html -p 8123 --target web --open",
     "parcel:build": "parcel build src/index.html --target web --no-source-maps --no-cache",
     "clean": "rimraf dist .cache .cache-loader .parcel-cache",
     "dev": "npm-run-all clean parcel:serve",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all stylelint clean parcel:build",
+    "stylelint": "stylelint src/**/*.scss",
     "test": "echo 'Everything is working as expected ✅\nStart working on your project by running \\033[1mnpm run dev\\033[0m'"
   },
   "web": "dist/index.html",
@@ -23,17 +23,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/Tarkras/music-band.git"
   },
   "author": {
-    "name": "Jordi Tarrida",
-    "email": "jorditarrida@uoc.edu"
+    "name": "Dídac Ortega",
+    "email": "didacoe@gmail.com"
   },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/uoc-advanced-html-css/uoc-boilerplate/issues"
   },
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/Tarkras/music-band#readme",
   "devDependencies": {
     "@parcel/transformer-sass": "^2.7.0",
     "autoprefixer": "^10.4.8",
@@ -42,7 +42,10 @@
     "postcss-preset-env": "^7.8.1",
     "posthtml-include": "^1.7.4",
     "rimraf": "^3.0.2",
-    "sharp": "^0.29.1"
+    "sharp": "^0.29.1",
+    "stylelint-config-recess-order": "^3.0.0",
+    "stylelint-config-recommended-scss": "^8.0.0",
+    "stylelint-scss": "^4.3.0"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.6",
