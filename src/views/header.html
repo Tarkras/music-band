@@ -1,0 +1,28 @@
+<header>
+  <nav class="navbar navbar-expand-md pt-3 pb-2">
+    <div class="container">
+      <a class="navbar-brand" href="./index.html">
+        <picture>
+          <source srcset="./assets/images/logo.png?as=webp" type="image/webp" />
+          <img src="./assets/images/logo.png" alt="Nir Va Ni Viene" width="50" height="50" />
+        </picture>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav align-items-center">
+          <li class="nav-item">
+            <a class="nav-link my-1 {{bandMemberPageActive}}" aria-current="{{bandMemberCurrentPage}}" href="band-members-information-page.html">Miembros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-1 {{articlePageActive}}" aria-current="{{articleCurrentPage}}" href="article-page.html">Artículos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link my-1 {{thirdPageActive}}" aria-current="{{thirdCurrentPage}}" href="third-page.html">Pricing</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

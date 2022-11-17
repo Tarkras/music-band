@@ -7,26 +7,21 @@
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
     <!-- do not remove this line! -->
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo.png">
-    <title>Home</title>
+    <title>Información de la banda</title>
   </head>
 
   <body>
     <include
       src="./views/header.html"
       locals='{
-        "bandMemberPageActive": "",
-        "bandMemberCurrentPage": "false",
+        "bandMemberPageActive": "active border-bottom border-primary border-3",
+        "bandMemberCurrentPage": "page",
         "articlePageActive": "",
         "articleCurrentPage": "false",
         "thirdPageActive": "",
         "thirdCurrentPage": "false"
       }'
-    ></include>
-    <main>
-      
-    </main>
-
-    <include src="./views/footer.html"></include>
+    />
 
     <script type="module" src="./assets/scripts/main.js"></script>
     <!-- do not remove this line! -->
