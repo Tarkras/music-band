@@ -1,38 +1,68 @@
-<footer>
+<footer class="footer">
   <div class="container">
-    <div></div>
-    <div>
+    <section class="footer__contact">
+      <div class="footer__contact-info">
+        <h3><i class="bi bi-telephone-fill"></i> ¿Necesitas mas información? ¡Contactanos!</h3>
+        <p>Envianos un correo a la dirección <a href="mailto:contacthell666@nirvaniviene.com">contacthell666@nirvaniviene.com</a></p>
+        <p>O contactanos por Whatsapp,Telegram o llamanos al número <a href="tel:666666666">666 666 666</a></p>
+      </div>
+
+      <div class="footer__newsletter">
+        <h3><i class="bi bi-envelope-at-fill"></i> Suscribete a nuestra Newsletter!</h3>
+        <form name="newsletter" method="POST" data-netlify="true">
+          <div class="mb-3">
+            <label for="email" class="form-label">Correo electrónico</label>
+            <input type="email" class="form-control" id="email">
+          </div>
+          <div class="footer__newsletter-submit">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="privacyPolicy">
+              <label class="form-check-label" for="privacyPolicy">Acepto la <a href="#">Política de Privacidad</a></label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-sm">Suscribir</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="footer__navigation">
       <picture>
         <source srcset="./assets/images/logo.png?as=webp" type="image/webp" />
-        <img src="./assets/images/logo.png" alt="Nir Va Ni Viene" width="50" height="50" />
+        <img class="footer__brand" src="./assets/images/logo.png" alt="Nir Va Ni Viene" width="50" height="50" />
       </picture>
 
-      <ul class="nav justify-content-center">
+      <ul class="nav justify-content-center footer__secondary-navigation">
         <li class="nav-item">
-          <a class="nav-link" href="#">Inicio</a>
+          <a class="nav-link" href="index.html">Inicio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Miembros</a>
+          <a class="nav-link" href="band-members-information-page.html">Miembros</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Artículos</a>
+          <a class="nav-link" href="article-page.html">Artículos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link disabled">Pricing</a>
+          <a class="nav-link" href="third-page.html">Pricing</a>
         </li>
       </ul>
 
-      <ul class="nav justify-content-end">
+      <ul class="nav justify-content-end footer__social-media">
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-brands fa-google-plus-g"></i></a>
+          <a class="nav-link px-2" href="#"><span class="footer__accessibility-text">Google</span><i class="fa-brands fa-google-plus-g"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-facebook"></i></a>
+          <a class="nav-link px-2" href="#"><span class="footer__accessibility-text">Facebook</span><i class="bi bi-facebook"></i></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+          <a class="nav-link px-2" href="#"><span class="footer__accessibility-text">Twitter</span><i class="bi bi-twitter"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" href="#"><span class="footer__accessibility-text">Instagram</span><i class="bi bi-instagram"></i></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-2" href="#"><span class="footer__accessibility-text">Twitch</span><i class="bi bi-twitch"></i></a>
         </li>
       </ul>
-    </div>
+    </section>
   </div>
 </footer>
