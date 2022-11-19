@@ -15,7 +15,7 @@
     }
 
     @include media-breakpoint-up(lg) {
-      height: 230px;
+      height: 14.375rem;
     }
 
   }
@@ -45,11 +45,11 @@
     padding: 1rem 0;
     border-color: $primary;
     border-top-style: solid;
-    border-top-width: 1px;
+    border-top-width: .0625rem;
 
     @include media-breakpoint-up(lg) {
       flex-direction: row;
-      height: 70px;
+      height: 4.375rem;
       padding-top: .5rem;
       padding-bottom: .5rem;
     }
