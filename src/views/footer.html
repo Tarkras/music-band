@@ -9,21 +9,15 @@
 
       <div class="footer__newsletter">
         <h3><i class="bi bi-envelope-at-fill"></i> Suscribete a nuestra Newsletter!</h3>
-        <form class="needs-validation" name="newsletter" method="POST" data-netlify="true">
+        <form name="newsletter" method="POST" data-netlify="true">
           <div class="mb-3">
             <label for="email" class="form-label">Correo electrónico</label>
             <input type="email" class="form-control" id="email" name="email" required>
-            <div class="invalid-feedback">
-              El correo electrónico es obligatorio.
-            </div>
           </div>
           <div class="footer__newsletter-submit">
             <div class="form-check">
               <input type="checkbox" class="form-check-input" id="privacyPolicy" required>
               <label class="form-check-label" for="privacyPolicy">Acepto la <a href="#">Política de Privacidad</a></label>
-              <div class="invalid-feedback">
-                Debe aceptar los términos y condiciones para subscribirse.
-              </div>
             </div>
             <button type="submit" class="btn btn-primary btn-sm">Suscribir</button>
           </div>

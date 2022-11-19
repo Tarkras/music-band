@@ -6,12 +6,18 @@
     flex-direction: column;
     flex-wrap: wrap;
     gap: 1rem;
+    height: auto;
     padding: 1rem 0;
     margin: 0 1rem;
 
     @include media-breakpoint-up(sm) {
       flex-direction: row;
     }
+
+    @include media-breakpoint-up(lg) {
+      height: 230px;
+    }
+
   }
 
   &__contact-info,
@@ -35,6 +41,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    height: auto;
     padding: 1rem 0;
     border-color: $primary;
     border-top-style: solid;
@@ -42,6 +49,7 @@
 
     @include media-breakpoint-up(lg) {
       flex-direction: row;
+      height: 70px;
       padding-top: .5rem;
       padding-bottom: .5rem;
     }

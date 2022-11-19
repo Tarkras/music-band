@@ -1,0 +1,101 @@
+.poster {
+  position: relative;
+  height: calc(100vh - 374px);
+
+  &__title {
+    position: absolute;
+    left: 200px;
+    width: 250px;
+    margin: 0;
+    color: $primary;
+    text-align: center;
+  }
+
+  &__subtitle {
+    position: absolute;
+    top: 150px;
+    right: 0;
+    z-index: 1;
+    width: 350px;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+    background-color: $body-bg;
+  }
+
+  &__logo-picture {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    z-index: 1;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    background-color: $secondary;
+    opacity: .5;
+  }
+
+  &__image-picture {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: calc(100vw - 150px);
+    height: calc(100vh - 474px);
+  }
+
+  &__banner-picture {
+    position: absolute;
+    bottom: 0;
+    float: left;
+    width: 145px;
+    height: 100%;
+    clear: left;
+    opacity: .8;
+  }
+
+  &__image {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  @supports (display: grid) {
+    display: grid;
+    grid-template-rows: 50px 50px 50px calc(100vh - 639px) 115px;
+    grid-template-columns: 150px 50px 250px 1fr 350px;
+
+    &__title {
+      position: unset;
+      grid-row: 1 / 3;
+      grid-column: 3 / 4;
+    }
+
+    &__subtitle {
+      position: unset;
+      grid-row: 4 / 5;
+      grid-column: 5 / 6;
+      align-self: center;
+    }
+
+    &__logo-picture {
+      position: unset;
+      grid-row: 4 / 5;
+      grid-column: 2 / 3;
+      align-self: start;
+    }
+
+    &__image-picture {
+      position: unset;
+      grid-row: 3 / -1;
+      grid-column: 2 / -1;
+    }
+
+    &__banner-picture {
+      position: unset;
+      grid-row: 1 / -1;
+      margin-right: .3125rem;
+    }
+  }
+}
