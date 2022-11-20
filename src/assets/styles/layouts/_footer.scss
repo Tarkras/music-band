@@ -30,6 +30,14 @@
     }
   }
 
+  &__link {
+    font-weight: $font-weight-semibold;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   &__newsletter-submit {
     display: flex;
     align-items: center;
