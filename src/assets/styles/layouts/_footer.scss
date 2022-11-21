@@ -30,6 +30,15 @@
     }
   }
 
+  &__title {
+    color: $primary;
+    text-decoration: underline;
+  }
+
+  &__icon {
+    padding-right: .5rem;
+  }
+
   &__link {
     font-weight: $font-weight-semibold;
 
