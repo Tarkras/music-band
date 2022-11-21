@@ -1,6 +1,7 @@
 @use "sass:color";
 
 $grey: #aaa;
+$black: #000;
 $primary: #104c75;
 $secondary: #cee7f8;
 $dark-blue: color.scale($primary, $lightness: -75%);
@@ -24,3 +25,11 @@ $btn-font-weight: 600;
 // Cards
 $card-height: 31.25rem;
 $card-border-color: $primary;
+
+// Lists
+$list-group-bg: transparent;
+$list-group-border-width: none;
+
+// Figures
+$figure-caption-font-size: 1rem;
+$figure-caption-color: $black;
