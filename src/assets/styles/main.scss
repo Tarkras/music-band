@@ -26,11 +26,12 @@
  * It's a best practice to use a different partial for each page
  */
 
-@import "base";
-@import "layouts/footer";
-@import "layouts/home-page-poster";
+@import "layouts/base-layout";
+@import "layouts/footer-layout";
+@import "layouts/home-page-poster-layout";
 @import "layouts/cards-layout";
-@import "layouts/article";
+@import "layouts/article-layout";
+@import "layouts/video-layout";
 
 /**
  * Do NOT include anything else in this file!

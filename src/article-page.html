@@ -25,7 +25,10 @@
 
     <main>
       <article class="article">
-        <img class="article__poster-image" src="./assets/images/article-poster-image.jpg" alt="Poster del festival de El platanito dominguero">
+        <picture>
+          <source srcset="./assets/images/article-poster-image.jpg?as=webp" type="image/webp" />
+          <img class="article__poster-image" src="./assets/images/article-poster-image.jpg" alt="Poster del festival de El platanito dominguero">
+        </picture>
         <div class="container">
           <div class="article__header">
             <h1 class="article__title">Festival El platanito dominguero</h1>
@@ -45,7 +48,10 @@
               <li class="list-group-item article__list-item">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</li>
             </ol>
             <figure class="figure article__figure">
-              <img src="./assets/images/article-image.jpg" class="figure-img rounded article__image" alt="...">
+              <picture>
+                <source srcset="./assets/images/article-image.jpg?as=webp" type="image/webp" />
+                <img src="./assets/images/article-image.jpg" class="figure-img rounded article__image" alt="...">
+              </picture>
               <figcaption class="figure-caption text-center fw-semibold">A caption for the above image.</figcaption>
             </figure>
           </section>

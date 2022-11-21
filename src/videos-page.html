@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" />
+    <!-- do not remove this line! -->
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/logo.png">
+    <title>Página de artículos</title>
+  </head>
+
+  <body>
+    <include
+      src="./views/header.html"
+      locals='{
+        "bandMemberPageActive": "",
+        "bandMemberCurrentPage": "false",
+        "articlePageActive": "",
+        "articleCurrentPage": "false",
+        "thirdPageActive": "active border-bottom border-primary border-3",
+        "thirdCurrentPage": "page"
+      }'
+    ></include>
+
+    <main>
+      <section class="videos container">
+        <h1 class="videos__title">Nuestros videos!</h1>
+        <div class="videos__container">
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube-nocookie.com/embed/WGVHF7dvasw",
+              "videoName": "Video one"
+            }'
+          ></include>
+
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube-nocookie.com/embed/DKP16d_WdZM",
+              "videoName": "Video two"
+            }'
+          ></include>
+
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube.com/embed/VVkMoXTlrrI",
+              "videoName": "Video three"
+            }'
+          ></include>
+
+          <include
+            src="./views/video.html"
+            locals='{
+              "videoUrl": "https://www.youtube.com/embed/G1IbRujko-A",
+              "videoName": "Video four"
+            }'
+          ></include>
+
+        </div>
+      </section>
+    </main>
+
+    <include src="./views/footer.html"></include>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
+  </body>
+</html>

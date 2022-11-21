@@ -1,6 +1,9 @@
 <div class="cards-layout__card-wrap">
   <div class="card h-100 mb-3">
-    <img src="{{image}}" class="card-img-top cards-layout__images" alt="Imagen de {{name}}">
+    <picture>
+      <source srcset="{{image}}?as=webp" type="image/webp" />
+      <img src="{{image}}" class="card-img-top cards-layout__images img-fluid" alt="Imagen de {{name}}">
+    </picture>
     <div class="card-body">
       <h2 class="card-title text-primary">{{name}}</h2>
       <p class="card-text"><small class="text-muted">{{position}}</small></p>
