@@ -7,8 +7,10 @@
     flex-wrap: wrap;
     gap: 1rem;
     height: auto;
-    padding: 1rem 0;
-    margin: 0 1rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 
     @include media-breakpoint-up(sm) {
       flex-direction: row;
@@ -23,7 +25,8 @@
   &__contact-info,
   &__newsletter {
     flex: 1;
-    margin: 0 1rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
 
     @supports (gap: 1rem) {
       margin: 0;
@@ -60,7 +63,8 @@
     align-items: center;
     justify-content: space-between;
     height: auto;
-    padding: 1rem 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     border-color: $primary;
     border-top-style: solid;
     border-top-width: .0625rem;
@@ -80,7 +84,8 @@
 
   &__secondary-navigation {
     flex-direction: column;
-    padding: .5rem 0;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
 
     @include media-breakpoint-up(sm) {
       flex-direction: row;
