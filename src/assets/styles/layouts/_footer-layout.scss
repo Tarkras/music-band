@@ -43,6 +43,7 @@
     font-weight: $font-weight-semibold;
 
     &:hover {
+      color: $dark-blue;
       text-decoration: none;
     }
   }
